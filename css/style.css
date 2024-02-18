@@ -338,23 +338,26 @@ header {
 }
 
 /*==============footer===============*/
-.footer{
+.footer {
     height: 200px;
     width: 100vw;
     display: flex;
     justify-content: center;
 
 }
-.footer__inner{
+
+.footer__inner {
     width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.footer__menu{
+
+.footer__menu {
     display: none;
 }
-.footer__inner p{
+
+.footer__inner p {
     color: #FFF;
     font-size: 18px;
     line-height: 28px; /* 155.556% */
@@ -362,7 +365,7 @@ header {
 
 
 @media screen and (max-width: 1280px) {
-    .header__to, .header__bottom, .video-block__inner,  .service-block__inner,
+    .header__top, .header__bottom, .video-block__inner, .service-block__inner,
     .portfolio__inner, .contact__inner, .footer__inner {
         width: 90%;
     }
@@ -381,6 +384,7 @@ header {
     .header__bottom {
         padding: 40px 0 0 0;
         flex-direction: column;
+        height: calc(130vh - 100px);
 
 
     }
@@ -426,7 +430,7 @@ header {
     }
 
     .service-block {
-        height: 140vh;
+        height: 160vh;
 
     }
 
@@ -467,19 +471,22 @@ header {
         font-size: 36px;
         line-height: 150%; /* 54px */
     }
+
     .contact__inner h2 {
         width: 100%;
         font-size: 36px;
         line-height: 150%; /* 54px */
 
     }
+
     .contact__inner {
 
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        row-gap: 30px ;
+        row-gap: 30px;
     }
+
     .contact__btn {
         font-size: 16px;
         width: 166px;
@@ -487,6 +494,15 @@ header {
 
     }
 
+    .service-block__inner {
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .service-block__cards {
+        justify-content: center;
+        row-gap: 50px;
+    }
 
 
 }
@@ -534,23 +550,27 @@ header {
     }
 
     .service-block {
-        height: 180vh;
+        height: 190vh;
 
     }
+
     .footer {
         height: 400px;
-        }
-    .footer__inner{
+    }
+
+    .footer__inner {
         flex-direction: column;
         justify-content: space-evenly;
     }
-    .footer__menu{
+
+    .footer__menu {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 25px;
     }
-    .footer__menu-link{
+
+    .footer__menu-link {
         font-size: 18px;
         font-weight: 700;
         line-height: 28px; /* 155.556% */
@@ -558,9 +578,14 @@ header {
     }
 
 
+}
+
+@media screen and (max-height: 790px) {
+    .service-block {
+        height: 250vh;
+
     }
-
-
+}
 
 
 
